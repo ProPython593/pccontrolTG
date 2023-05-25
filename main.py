@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import telebot
 import os
 import subprocess
@@ -53,8 +55,8 @@ def get_text_messages(message):
             bot.send_message(message.from_user.id, "Отправляю")
             myScreenshot = pyautogui.screenshot()
             myScreenshot.save(r'C:\Users\User\Desktop\ds bot\time files\screen.png')
-            bot.send_document(message.chat.id, open(r'C:\Users\User\Desktop\ds bot\time files\screen.png', 'rb'))
-            os.remove(r'C:\Users\User\Desktop\ds bot\time files\screen.png')
+            bot.send_document(message.chat.id, open(r'Путь к папке со временными файлами\screen.png', 'rb'))
+            os.remove(r'Путь к папке со временными файлами\screen.png')
         else:
             bot.send_message(message.from_user.id, "Я тебя не понимаю.")
     else:
