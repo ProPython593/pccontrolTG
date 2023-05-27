@@ -13,7 +13,7 @@ from tkinter import *
 from win10toast import ToastNotifier
 
 toast = ToastNotifier()
-bot = telebot.TeleBot('6156359786:AAGuDkihO-Orb19CKQNcVmJM8ZR-Vb9Ym38')
+bot = telebot.TeleBot('<Токен>')
 
 @bot.message_handler(commands=['start'])
 def start(message):
@@ -80,9 +80,9 @@ def get_text_messages(message):
         elif message.text == "Отправить скриншот":  
             bot.send_message(message.from_user.id, "Отправляю")
             myScreenshot = pyautogui.screenshot()
-            myScreenshot.save(r'C:\Users\User\Desktop\ds bot\time files\screen.png')
-            bot.send_document(message.chat.id, open(r'C:\Users\User\Desktop\ds bot\time files\screen.png', 'rb'))
-            os.remove(r'C:\Users\User\Desktop\ds bot\time files\screen.png')
+            myScreenshot.save(r'<путь к папке со временными фаллами>\screen.png')
+            bot.send_document(message.chat.id, open(r'<путь к папке со временными фаллами>\screen.png', 'rb'))
+            os.remove(r'<путь к папке со временными фаллами>\screen.png')
         elif message.text == "Отправить уведомление": 
            toast.show_toast(
                 "Нотификашион из телеграма",
