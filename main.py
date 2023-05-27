@@ -18,7 +18,7 @@ bot = telebot.TeleBot('<Токен>')
 @bot.message_handler(commands=['start'])
 def start(message):
 
-    if message.from_user.id==6037918044 or message.from_user.id==5926772909 or message.from_user.id==2103478489:
+    if message.from_user.id==<id1> or message.from_user.id==<id2> or message.from_user.id==<id3>:
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn1 = types.KeyboardButton("Питание")
         btn2 = types.KeyboardButton("Другое")
@@ -30,7 +30,7 @@ def start(message):
 @bot.message_handler(content_types=['text'])
 def get_text_messages(message):
 
-    if message.from_user.id==6037918044 or message.from_user.id==5926772909 or message.from_user.id==2103478489:
+    if message.from_user.id==<id1> or message.from_user.id==<id2> or message.from_user.id==<id3>:
         if message.text == "Питание":
             markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
             btn1 = types.KeyboardButton("Выключить!")
