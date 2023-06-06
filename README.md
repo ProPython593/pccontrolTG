@@ -37,13 +37,13 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 3.в строке 16 замените <Токен> на ваш скопированый токен
 
 4.в строках 83,84,85 замените <путь к папке со временными фаллами> по примеру:
-```
+```python
 myScreenshot.save(r'C:\Users\User\Desktop\tg bot\time files\screen.png')
 bot.send_document(message.chat.id, open(r'C:\Users\User\Desktop\tg bot\timefiles\screen.png', 'rb'))
 os.remove(r'C:\Users\User\Desktop\tg bot\time files\screen.png')
 ```
 5.в строках 21,33 замените <id1> <di2> <id3> на id людей(получить у getmyid_bot) у которых будет доступ по примеру
-```
+```python
 if message.from_user.id==xxxxxxxxxx or message.from_user.id==xxxxxxxxxx or message.from_user.id==xxxxxxxxxx(и т.д по примеру or message.from_user.id==xxxxxxxxxx):
 ```
 
