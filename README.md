@@ -51,7 +51,7 @@ if message.from_user.id==xxxxxxxxxx or message.from_user.id==xxxxxxxxxx or messa
 
 ## Планы
 
-<input type="checkbox" checked="checked" disabled />Сделать авто установщик
+<input type="checkbox" checked="checked" disabled>Сделать авто установщик
 
 2.Доделать функцию уведомления
 
