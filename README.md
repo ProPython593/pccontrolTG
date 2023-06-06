@@ -50,7 +50,7 @@ if message.from_user.id==xxxxxxxxxx or message.from_user.id==xxxxxxxxxx or messa
 6.Запустите файл если все сделано правильно то бот начнёт работу
 
 ## Планы
-
+<form>
 <input type="checkbox" checked="checked" disabled>Сделать авто установщик
 
 2.Доделать функцию уведомления
@@ -60,7 +60,7 @@ if message.from_user.id==xxxxxxxxxx or message.from_user.id==xxxxxxxxxx or messa
 4.сделать под линукс
 
 5.Сделать автозапуск
-
+</form>
 6.Сделать exe-шник
 
 7.перейти на др. библиотеку бота
