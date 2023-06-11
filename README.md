@@ -36,7 +36,13 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 
 3. напишите в cmd комманды
 ```
-
+pip install pyTelegramBotAPI
+```
+```
+pip install pyautogui
+```
+```
+pip install win10toast
 ```
 
 3.в строке 16 замените <Токен> на ваш скопированый токен
