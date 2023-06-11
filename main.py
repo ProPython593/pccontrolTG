@@ -4,12 +4,8 @@ block=0
 
 import telebot
 import os
-import subprocess
-from telebot import types # для указание типов
+from telebot import types 
 import pyautogui
-import tkinter 
-from tkinter import messagebox
-from tkinter import *
 from win10toast import ToastNotifier
 
 toast = ToastNotifier()
