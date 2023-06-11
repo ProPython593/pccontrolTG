@@ -64,3 +64,6 @@ if message.from_user.id==xxxxxxxxxx or message.from_user.id==xxxxxxxxxx or messa
 - [ ] Сделать exe-шник
 
 - [ ] перейти на др. библиотеку бота
+
+# 🔗Соц. Сети
+[![telegram](https://img.shields.io/badge/telegram-1DA1F2?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/pccontroltg)
