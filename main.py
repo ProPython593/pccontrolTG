@@ -34,7 +34,7 @@ def get_text_messages(message):
             btn3 = types.KeyboardButton("Назад")
             markup.add(btn1, btn2, btn3)
             bot.send_message(message.chat.id, text="Меню питание".format(message.from_user), reply_markup=markup)
-        elif message.text == "Питание":
+        elif message.text == "Другое":
             markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
             btn1 = types.KeyboardButton("Отправить уведомление")
             btn2 = types.KeyboardButton("Отправить скриншот")
@@ -74,16 +74,9 @@ def get_text_messages(message):
             keyboard.add(key_undo) #добавляем кнопку в клавиатуру 
             bot.send_message(message.from_user.id, "Выберете режим", reply_markup=keyboard)
         elif message.text == "Отправить скриншот":  
-            bot.send_message(message.from_user.id, "Отправляю")
-            myScreenshot = pyautogui.screenshot()
-            myScreenshot.save(r'<путь к папке со временными фаллами>\screen.png')
-            bot.send_document(message.chat.id, open(r'<путь к папке со временными фаллами>\screen.png', 'rb'))
-            os.remove(r'<путь к папке со временными фаллами>\screen.png')
+            bot.send_message(message.from_user.id, "Это премиум функция купить в @pokupkavippccontroltg_bot")
         elif message.text == "Отправить уведомление": 
-           toast.show_toast(
-                "Нотификашион из телеграма",
-                "Тест",
-            )
+           bot.send_message(message.chat.id, "Это премиум функция купить в @pokupkavippccontroltg_bot")
         else:
             bot.send_message(message.from_user.id, "Я тебя не понимаю.")
     else:
@@ -103,8 +96,7 @@ def callback_worker(call):
         bot.send_message(call.message.chat.id, 'Перезагружаю')
         os.system("shutdown /r /t 0")
     elif call.data == "undo":
-        bot.send_message(call.message.chat.id, 'Задача Выключение/Перезагрузка отменена')
-        os.system("shutdown /a")
+        bot.send_message(call.message.chat.id, '@pokupkavippccontroltg_bot')
     else:
         markup = types.InlineKeyboardMarkup()
         btn1 = types.InlineKeyboardButton("Обратиться", url='https://forms.gle/YikJbts53cjRxT1e9')
